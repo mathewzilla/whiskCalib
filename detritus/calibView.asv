@@ -88,7 +88,6 @@ fidx = 2000;
 handles.data_frame = load_dat_frame(handles.data_video,fidx);
 subplot 121
 imagesc(handles.data_frame);
-guidata(hObject, handles);
 
 % --- Executes on button press in pushbutton3.
 function pushbutton3_Callback(hObject, eventdata, handles)
@@ -101,7 +100,7 @@ fidx = 2000;
 handles.calib_frame = load_dat_frame(handles.calib_video,fidx);
 subplot 122
 imagesc(handles.calib_frame);
-guidata(hObject, handles);
+
 
 % --- Executes on button press in pushbutton1.
 function pushbutton1_Callback(hObject, eventdata, handles)
